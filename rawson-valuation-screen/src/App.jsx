@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import MyNavbar from './components/MyNavbar'
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App bg-light">
+      <MyNavbar />
       <button className="btn btn-primary">
-      <i className="bi bi-plus-lg"></i>Hello Vue!</button>
+      <i className="bi bi-plus-lg"></i>Hello Vite!</button>
     </div>
   )
 }
