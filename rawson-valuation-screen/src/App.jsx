@@ -6,8 +6,14 @@ function App() {
   return (
     <div className="App bg-light">
       <MyNavbar />
-      <button className="btn btn-primary">
-      <i className="bi bi-plus-lg"></i>Hello Vite!</button>
+      <div className="container mainAppContainer">
+        <div className="d-flex justify-content-end mt-5">
+        <button className="btn btn-primary">
+      <i className="bi bi-plus-lg"></i>New Valuation</button>
+        </div>
+      </div>
+      
+      
     </div>
   )
 }
