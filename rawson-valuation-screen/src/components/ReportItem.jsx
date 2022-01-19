@@ -7,7 +7,7 @@ export default function ReportItem() {
         <i className="bi bi-eye-fill text-primary p-0 m-0"></i>
       </div>
       <div className="col m-0 p-0">
-        <i className="bi bi-three-dots-vertical text-primary"></i>
+        <i className="bi bi-three-dots-vertical reportMenuIcon"></i>
       </div>
     </div>
   );

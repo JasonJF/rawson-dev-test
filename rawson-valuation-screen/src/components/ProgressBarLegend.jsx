@@ -6,7 +6,7 @@ export default function ProgressBarLegend() {
     <div className="progressLegendContainer d-flex flex-row px-3">
       <LegendItem text="In progress (6)" colour="text-primary" />
       <LegendItem text="Completed (8)" colour="text-warning" />
-      <LegendItem text="Draft (7)" colour="text-light" />
+      <LegendItem text="Draft (7)" colour="draftIcon" />
     </div>
   );
 }

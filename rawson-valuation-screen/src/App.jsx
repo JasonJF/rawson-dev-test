@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <MyNavbar />
       <div className="container mainAppContainer my-5">
-        <div className="d-flex justify-content-end mt-5">
+        <div className="newValuationContainer d-flex justify-content-end mt-5">
           <button className="btn btn-primary">
             <i className="bi bi-plus-lg"></i>New Valuation
           </button>
