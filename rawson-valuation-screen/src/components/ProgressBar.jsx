@@ -3,7 +3,7 @@ import React from "react";
 export default function ProgressBar(props) {
   let bars = props.bars;
 
-  console.log(bars);
+  // console.log(bars);
   return (
     <div className="progress" style={{ height: "5px" }}>
       {bars.map((bar, index) => {

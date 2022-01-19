@@ -8,7 +8,7 @@ export default function ValuationsSummary() {
             <div className="col container-fluid">
               <div className="row">
                 <div className="col my-auto">
-                  <h1 className="my-auto">21</h1>
+                  <h1 className="my-auto totalCountNumber">21</h1>
                 </div>
                 <div className="col my-auto">
                   <p className="text-nowrap my-auto legendItemText">Total valuations</p>

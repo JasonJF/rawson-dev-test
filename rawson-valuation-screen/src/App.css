@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+/* Fonts */
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .App {
   min-height: 100vh;
@@ -13,8 +20,12 @@
   width: 90vw;
 }
 
+.totalCountNumber {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .legendItemText {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .legendItemText i {
@@ -26,7 +37,7 @@
 }
 
 tbody {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #292b2c;
 }
 .customTableHead {

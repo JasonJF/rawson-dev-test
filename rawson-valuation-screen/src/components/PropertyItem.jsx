@@ -6,7 +6,7 @@ export default function PropertyItem(props) {
   // console.log(cellValue);
   return (
     // <div className="">
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row mx-auto p-0">
         <div className="propertyImgContainer align-self-center p-2 m-1">
           <img
             className="propertyImg p-0 m-0"

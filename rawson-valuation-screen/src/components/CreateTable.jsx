@@ -72,7 +72,7 @@ export default function Table({ columns, data, defaultColumn }) {
         </tr> */}
       </div>
       <table {...getTableProps()} className="container mx-0">
-        <thead className="customTableHead py-2">
+        <thead className="customTableHead py-3">
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
