@@ -3,6 +3,7 @@ import Table from "./CreateTable";
 import data from "../dummydata/testCollection.json";
 import ProgressItem from "./ProgressItem";
 import ReportItem from "./ReportItem";
+import PropertyItem from "./PropertyItem";
 
 //import data
 
@@ -39,7 +40,8 @@ export default function MyReactTable() {
     () => [
       {
         Header: "STREET ADDRESS",
-        accessor: "streetAddress"
+        accessor: "streetAddress",
+        Cell: (cell) => <PropertyItem value={cell} />
       },
       {
         Header: "SELLER",
@@ -48,7 +50,7 @@ export default function MyReactTable() {
       {
         Header: "PROGRESS",
         accessor: "progress",
-        Cell: () => <ProgressItem />,
+        Cell: (cell) => <ProgressItem value={cell} />,
         width: 500,
       },
       {
