@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import Table from "./CreateTable";
 import data from "../dummydata/testCollection.json";
 import ProgressItem from "./ProgressItem";
+import ReportItem from "./ReportItem";
 
 //import data
 
@@ -60,7 +61,8 @@ export default function MyReactTable() {
       },
       {
         Header: "REPORT",
-        accessor: "report"
+        accessor: "report",
+        Cell: () => <ReportItem />
       }
     ],
     []

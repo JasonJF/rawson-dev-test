@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .App {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: #f2f2f2;
 }
@@ -33,4 +33,8 @@ tbody {
   background-color: #f7f7f7;
   color: darkgray;
   font-size: 0.7rem;
+}
+
+.reportItemContainer i {
+  font-size: 1.3rem;
 }
