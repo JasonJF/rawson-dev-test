@@ -2,11 +2,12 @@ import {
   useTable,
   useGlobalFilter,
   useAsyncDebounce,
-  useSortBy
+  useSortBy,
+  useFlexLayout
 } from "react-table";
 import { useState } from "react";
 
-export default function Table({ columns, data }) {
+export default function Table({ columns, data, defaultColumn }) {
   //Example taken from https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a
 
   //Global filter
@@ -41,6 +42,7 @@ export default function Table({ columns, data }) {
     headerGroups,
     rows,
     prepareRow,
+    useFlexLayout,
     state: { globalFilter },
     visibleColumns,
     preGlobalFilteredRows,
@@ -48,7 +50,8 @@ export default function Table({ columns, data }) {
   } = useTable(
     {
       columns,
-      data
+      data,
+      defaultColumn
     },
     useGlobalFilter,
     useSortBy

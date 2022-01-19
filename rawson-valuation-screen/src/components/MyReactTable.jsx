@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import Table from "./CreateTable";
 import data from "../dummydata/testCollection.json";
+import ProgressItem from "./ProgressItem";
 
 //import data
 
@@ -18,7 +19,21 @@ import data from "../dummydata/testCollection.json";
 // }]
 // console.log(data);
 
+
+
+
 export default function MyReactTable() {
+
+  //Setting up defaultColumn for flex resizing
+  const defaultColumn = React.useMemo(
+    () => ({
+      // When using the useFlexLayout:
+      minWidth: 30, // minWidth is only used as a limit for resizing
+      width: 150, // width is used for both the flex-basis and flex-grow
+      maxWidth: 200, // maxWidth is only used as a limit for resizing
+  }),
+  []
+);
   const columns = useMemo(
     () => [
       {
@@ -31,7 +46,9 @@ export default function MyReactTable() {
       },
       {
         Header: "PROGRESS",
-        accessor: "progress"
+        accessor: "progress",
+        Cell: () => <ProgressItem />,
+        width: 500,
       },
       {
         Header: "CREATED",
@@ -52,8 +69,8 @@ export default function MyReactTable() {
   const rows = useMemo(() => data, []);
 
   return (
-    <div className="tableContainer card py-3 px-0 my-4">
-      <Table columns={columns} data={rows} />
+    <div className="container card py-3 px-0 my-4">
+      <Table columns={columns} data={rows} defaultColumn={defaultColumn} />
     </div>
   );
 }
