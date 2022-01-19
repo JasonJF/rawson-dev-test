@@ -3,21 +3,13 @@ import ProgressBarWrapper from './ProgressBarWrapper'
 
 export default function ValuationsSummary() {
     return (
-        <div className="container card p-3 shadow-sm my-3">
-          <div className="row px-1 mx-1">
-            <div className="col container-fluid">
-              <div className="row">
-                <div className="col my-auto">
-                  <h1 className="my-auto totalCountNumber">21</h1>
-                </div>
-                <div className="col my-auto">
-                  <p className="text-nowrap my-auto legendItemText">Total valuations</p>
-                </div>
-              </div>
+        <div className="container card p-4 shadow-sm my-3">
+          <div className="d-flex px-3 mx-1">
+            <div className="d-flex col-sm-3 px-4">
+              <h1 className="my-auto totalCountNumber">21</h1>
+              <p className="text-nowrap my-auto legendItemText mx-3">Total valuations</p>
             </div>
-            <div className="col-sm-9 m-auto">
-              <ProgressBarWrapper/>
-            </div>
+          <div className="col-sm-9"> <ProgressBarWrapper/></div>
           </div>
         </div>
       );

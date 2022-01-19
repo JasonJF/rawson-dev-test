@@ -43,7 +43,10 @@ tbody {
 .customTableHead {
   background-color: #f7f7f7;
   color: darkgray;
-  font-size: 0.7rem;
+  font-size: 0.7rem
+}
+.customTableHead th {
+  padding: 1rem;
 }
 
 .reportItemContainer i {
