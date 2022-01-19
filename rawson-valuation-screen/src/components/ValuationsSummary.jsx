@@ -3,7 +3,7 @@ import ProgressBarWrapper from './ProgressBarWrapper'
 
 export default function ValuationsSummary() {
     return (
-        <div className="container card p-4 shadow-sm my-3">
+        <div className="container card p-4 shadow-sm my-4">
           <div className="d-flex px-3 mx-1">
             <div className="d-flex col-sm-3 px-4">
               <h1 className="my-auto totalCountNumber">21</h1>

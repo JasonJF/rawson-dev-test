@@ -7,8 +7,7 @@ import {
 } from "react-table";
 import { useState } from "react";
 
-export default function Table({ columns, data, defaultColumn }) {
-  //Example taken from https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a
+ //Example taken from https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a
 
   //Global filter
   const TWO_HUNDRED_MS = 200;
@@ -31,10 +30,13 @@ export default function Table({ columns, data, defaultColumn }) {
           setValue(e.target.value);
           onChange(e.target.value);
         }}
-        placeholder={`Search`}
+        placeholder={`Search valuations by address or sellers name`}
       />
     );
   }
+
+export default function Table({ columns, data, defaultColumn }) {
+ 
   // Use the state and functions returned from useTable to build your UI
   const {
     getTableProps,
@@ -59,17 +61,16 @@ export default function Table({ columns, data, defaultColumn }) {
 
   // Render the UI for your table
   return (
-    <div className="container mx-0 px-0">
-      <div className="container-fluid my-1">
-        {/* <tr>
-          <th colSpan={1}> */}
-        {/* <GlobalFilter
+    <div className="row mx-0 px-0">
+      <div className="col-sm-6 mt-1 mb-3 mx-2">
+        <div className="input-group">
+          <span className="input-group-text"><i className="bi bi-search"></i></span>
+        <GlobalFilter
           preGlobalFilteredRows={preGlobalFilteredRows}
           globalFilter={globalFilter}
           setGlobalFilter={setGlobalFilter}
-        /> */}
-        {/* </th>
-        </tr> */}
+        />
+        </div>
       </div>
       <table {...getTableProps()} className="container mx-0">
         <thead className="customTableHead py-3">

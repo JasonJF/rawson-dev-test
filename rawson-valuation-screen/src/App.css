@@ -58,3 +58,7 @@ tbody {
   height: 50px;
   border-radius: 100%;
 }
+
+.input-group span {
+  background-color: white;
+}

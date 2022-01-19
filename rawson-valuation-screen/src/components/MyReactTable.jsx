@@ -4,6 +4,7 @@ import data from "../dummydata/testCollection.json";
 import ProgressItem from "./ProgressItem";
 import ReportItem from "./ReportItem";
 import PropertyItem from "./PropertyItem";
+import SellerItem from "./SellerItem";
 
 //import data
 
@@ -45,26 +46,30 @@ export default function MyReactTable() {
       },
       {
         Header: "SELLER",
-        accessor: "seller"
+        accessor: "seller",
+        Cell: (cell) => <SellerItem value={cell}/>
       },
       {
         Header: "PROGRESS",
         accessor: "progress",
         Cell: (cell) => <ProgressItem value={cell} />,
-        width: 500,
+        disableGlobalFilter: true
       },
       {
         Header: "CREATED",
-        accessor: "created"
+        accessor: "created",
+        disableGlobalFilter: true
       },
       {
         Header: "COMPLETED",
-        accessor: "completed"
+        accessor: "completed",
+        disableGlobalFilter: true
       },
       {
         Header: "REPORT",
         accessor: "report",
-        Cell: () => <ReportItem />
+        Cell: () => <ReportItem />,
+        disableGlobalFilter: true
       }
     ],
     []
@@ -73,7 +78,7 @@ export default function MyReactTable() {
   const rows = useMemo(() => data, []);
 
   return (
-    <div className="container card py-3 px-0 my-4">
+    <div className="container shadow-sm card py-3 px-0 my-4">
       <Table columns={columns} data={rows} defaultColumn={defaultColumn} />
     </div>
   );
