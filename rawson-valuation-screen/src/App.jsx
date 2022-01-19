@@ -1,6 +1,7 @@
-import './App.css'
-import MyNavbar from './components/MyNavbar'
-import ValuationsSummary from './components/ValuationsSummary'
+import './App.css';
+import MyNavbar from './components/MyNavbar';
+import MyReactTable from './components/MyReactTable';
+import ValuationsSummary from './components/ValuationsSummary';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           </button>
         </div>
         <ValuationsSummary/>
+        <MyReactTable/>
       </div>
       
       

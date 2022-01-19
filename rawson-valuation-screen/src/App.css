@@ -20,3 +20,17 @@
 .legendItemText i {
   font-size: 0.4rem;
 }
+.tableContainer {
+  width: 90vw;
+  margin: auto;
+}
+
+tbody {
+  font-size: 0.8rem;
+  color: #292b2c;
+}
+.customTableHead {
+  background-color: #f7f7f7;
+  color: darkgray;
+  font-size: 0.7rem;
+}
