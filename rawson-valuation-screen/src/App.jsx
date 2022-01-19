@@ -7,7 +7,7 @@ import logo from "../src/images/logo-rawson-light-grey.png";
 function App() {
 
   return (
-    <div className="App bg-light">
+    <div className="App">
       <MyNavbar />
       <div className="container mainAppContainer my-5">
         <div className="d-flex justify-content-end mt-5">
@@ -17,9 +17,9 @@ function App() {
         </div>
         <ValuationsSummary/>
         <MyReactTable/>
-        <div className="d-flex justify-content-end my-5">
+        <footer className="d-flex justify-content-end my-5">
           <img className="rawsonLogo" src={logo} alt="rawson-logo" />
-        </div>
+        </footer>
       </div>
       
       
