@@ -20,6 +20,18 @@ import SellerItem from "./SellerItem";
 //   "completed": "Incomplete",
 //   "report": "1"
 // }]
+
+// const data = [{
+//   "_id": {
+//     "$oid": "61e6d643f74bde307e507b20"
+//   },
+//   "streetAddress": "1",
+//   "seller": ["1"],
+//   "progress": "0%",
+//   "created": "1",
+//   "completed": "1",
+//   "report": "1"
+// }]
 // console.log(data);
 
 
@@ -28,15 +40,15 @@ import SellerItem from "./SellerItem";
 export default function MyReactTable() {
 
   //Setting up defaultColumn for flex resizing
-  const defaultColumn = React.useMemo(
-    () => ({
-      // When using the useFlexLayout:
-      minWidth: 30, // minWidth is only used as a limit for resizing
-      width: 150, // width is used for both the flex-basis and flex-grow
-      maxWidth: 200, // maxWidth is only used as a limit for resizing
-  }),
-  []
-);
+//   const defaultColumn = React.useMemo(
+//     () => ({
+//       // When using the useFlexLayout:
+//       minWidth: 30, // minWidth is only used as a limit for resizing
+//       width: 150, // width is used for both the flex-basis and flex-grow
+//       maxWidth: 200, // maxWidth is only used as a limit for resizing
+//   }),
+//   []
+// );
   const columns = useMemo(
     () => [
       {
@@ -45,7 +57,13 @@ export default function MyReactTable() {
         Cell: (cell) => <PropertyItem value={cell} />
       },
       {
-        Header: "SELLER",
+        // Header: "SELLER",
+        Header: () => (
+          <div
+            style={{
+              textAlign:"center"
+            }}
+          >SELLER</div>),       //The extra div is to align this specific column
         accessor: "seller",
         Cell: (cell) => <SellerItem value={cell}/>
       },
@@ -79,7 +97,7 @@ export default function MyReactTable() {
 
   return (
     <div className="container shadow-sm card py-3 px-0 my-4">
-      <Table columns={columns} data={rows} defaultColumn={defaultColumn} />
+      <Table columns={columns} data={rows}/> 
     </div>
   );
 }
