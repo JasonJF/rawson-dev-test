@@ -32,13 +32,27 @@ a:hover {
 .mainAppContainer {
   width: 90vw;
 }
-
+.userName {
+  font-size: 1.2rem;
+}
 .navLogo {
-  background-color: #ffc107;
-  color: white;
+  background-color: #ffd503;
+  width: 2rem;
+  height: 2rem;
   border-radius: 0.25rem;
+}
+.navLogo i {
+  color: white;
   font-size: 1.2rem;
   padding: 0.25rem 0.75rem;
+}
+.navLogoText {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logoutBtn {
+  font-size: 1rem;
+  color: #377dff;
 }
 
 .newValuationContainer {
@@ -74,7 +88,9 @@ tbody {
   font-size: 0.7rem
 }
 .customTableHead th {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray
 }
 
 .reportItemContainer i {
