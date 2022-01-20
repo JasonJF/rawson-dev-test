@@ -6,8 +6,8 @@ export default function SellerItem(props) {
     // console.log(sellers);
     return (
         <div className="sellerContainer d-flex flex-column justify-content-center mx-auto">
-            {sellers && sellers.map((seller) => {
-               return <p className="text-center text-wrap mx-0 px-0">{seller}</p>
+            {sellers && sellers.map((seller, index) => {
+               return <p key={index} className="text-center text-wrap mx-0 px-0">{seller}</p>
             })}
         </div>
     );

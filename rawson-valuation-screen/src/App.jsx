@@ -3,6 +3,7 @@ import MyNavbar from './components/MyNavbar';
 import MyReactTable from './components/MyReactTable';
 import ValuationsSummary from './components/ValuationsSummary';
 import logo from "../src/images/logo-rawson-light-grey.png";
+import ReportPopUp from './components/ReportPopUp';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <ValuationsSummary/>
         <MyReactTable/>
         <footer className="d-flex justify-content-end my-5">
+          <ReportPopUp />
           <img className="rawsonLogo" src={logo} alt="rawson-logo" />
         </footer>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import ReportPopUp from "./ReportPopUp";
 
 export default function ReportItem() {
   return (
@@ -7,7 +8,14 @@ export default function ReportItem() {
         <i className="bi bi-eye-fill text-primary p-0 m-0"></i>
       </div>
       <div className="col m-0 p-0">
-        <i className="bi bi-three-dots-vertical reportMenuIcon"></i>
+        <div className="reportMenuButton dropstart">
+          <i className="bi bi-three-dots-vertical reportMenuIcon"
+           type="button"
+           id="dropdownMenuButton1"
+           data-bs-toggle="dropdown"
+           aria-expanded="false"></i>
+        <ReportPopUp />
+        </div>
       </div>
     </div>
   );
