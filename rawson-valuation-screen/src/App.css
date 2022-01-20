@@ -81,23 +81,21 @@ tbody {
   font-size: 1.3rem;
 }
 .reportMenuButton {
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 1.3rem;
-  /* background-color: #DBE7FF; */
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+ 
+}
+.reportMenuButton:hover {
+  background-color: #DBE7FF;
 }
 .reportMenuIcon {
   color: #C0C9D2;
-  padding: 0 0.2rem;
-  width: 2rem;
 }
-.reportMenuIcon:hover, .reportMenuIcon:active {
+.reportMenuIcon:hover {
   color: #0d6efd;
   cursor: pointer;
-  /* width: 1.3rem; */
-  /* height: 1.3rem; */
-  border-radius: 100%;
-  background-color: #DBE7FF;
+  /* background-color: #DBE7FF; */
 }
 .propertyImg {
   width: 50px;

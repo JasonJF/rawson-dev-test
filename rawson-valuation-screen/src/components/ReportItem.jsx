@@ -8,7 +8,7 @@ export default function ReportItem() {
         <i className="bi bi-eye-fill text-primary p-0 m-0"></i>
       </div>
       <div className="col m-0 p-0">
-        <div className="reportMenuButton dropstart">
+        <div className="reportMenuButton dropstart d-flex justify-content-center">
           <i className="bi bi-three-dots-vertical reportMenuIcon"
            type="button"
            id="dropdownMenuButton1"
