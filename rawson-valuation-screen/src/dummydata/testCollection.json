@@ -3,7 +3,7 @@
     "$oid": "61e6d643f74bde307e507b20"
   },
   "streetAddress": "123 Sycamore Avenue, Observatory",
-  "seller": "Ryno Johnson",
+  "seller": ["Ryno Johnson"],
   "progress": "0%",
   "created": "21-Aug-20",
   "completed": "Incomplete",
@@ -13,7 +13,7 @@
     "$oid": "61e6d643f74bde307e507b21"
   },
   "streetAddress": "124 Sycamore Avenue, Observatory",
-  "seller": "Chad Grant, Barbara Cunningham",
+  "seller": ["Chad Grant", "Barbara Cunningham"],
   "progress": "50%",
   "created": "22-Aug-20",
   "completed": "Incomplete",
@@ -23,7 +23,7 @@
     "$oid": "61e6d643f74bde307e507b22"
   },
   "streetAddress": "125 Sycamore Avenue, Observatory",
-  "seller": "Barbara Fox",
+  "seller": ["Barbara Fox"],
   "progress": "100%",
   "created": "23-Aug-20",
   "completed": "23-Aug-20",
@@ -33,7 +33,7 @@
     "$oid": "61e6d643f74bde307e507b23"
   },
   "streetAddress": "126 Sycamore Avenue, Observatory",
-  "seller": "Louisa Woodkin, Vincent Willis",
+  "seller": ["Louisa Woodkin", "Vincent Willis"],
   "progress": "100%",
   "created": "24-Aug-20",
   "completed": "24-Aug-20",
@@ -43,7 +43,7 @@
     "$oid": "61e6d643f74bde307e507b24"
   },
   "streetAddress": "127 Sycamore Avenue, Observatory",
-  "seller": "Louis Mendez",
+  "seller":[ "Louis Mendez"],
   "progress": "71%",
   "created": "25-Aug-20",
   "completed": "Incomplete",
@@ -53,7 +53,7 @@
     "$oid": "61e6d643f74bde307e507b25"
   },
   "streetAddress": "128 Sycamore Avenue, Observatory",
-  "seller": "Kelly Grand",
+  "seller": ["Kelly Grand"],
   "progress": "100%",
   "created": "26-Aug-20",
   "completed": "27-Aug-20",
@@ -63,7 +63,7 @@
     "$oid": "61e6d643f74bde307e507b26"
   },
   "streetAddress": "129 Sycamore Avenue, Observatory",
-  "seller": "Alex Henderson, George Ellis",
+  "seller": ["Alex Henderson", "George Ellis"],
   "progress": "0%",
   "created": "27-Aug-20",
   "completed": "Incomplete",
@@ -73,7 +73,7 @@
     "$oid": "61e6d643f74bde307e507b27"
   },
   "streetAddress": "130 Sycamore Avenue, Observatory",
-  "seller": "Beatrice Cooper",
+  "seller": ["Beatrice Cooper"],
   "progress": "71%",
   "created": "28-Aug-20",
   "completed": "28-Aug-20",
@@ -83,7 +83,7 @@
     "$oid": "61e6d643f74bde307e507b28"
   },
   "streetAddress": "131 Sycamore Avenue, Observatory",
-  "seller": "Dan Mendoza",
+  "seller": ["Dan Mendoza"],
   "progress": "100%",
   "created": "29-Aug-20",
   "completed": "29-Aug-20",
@@ -93,7 +93,7 @@
     "$oid": "61e6d643f74bde307e507b29"
   },
   "streetAddress": "132 Sycamore Avenue, Observatory",
-  "seller": "Jessica Bradley",
+  "seller": ["Jessica Bradley"],
   "progress": "100%",
   "created": "30-Aug-20",
   "completed": "30-Aug-20",
@@ -103,7 +103,7 @@
     "$oid": "61e6d643f74bde307e507b2a"
   },
   "streetAddress": "133 Sycamore Avenue, Observatory",
-  "seller": "Ryno Johnson",
+  "seller": ["Ryno Johnson"],
   "progress": "50%",
   "created": "31-Aug-20",
   "completed": "Incomplete",
@@ -113,7 +113,7 @@
     "$oid": "61e6d643f74bde307e507b2b"
   },
   "streetAddress": "134 Sycamore Avenue, Observatory",
-  "seller": "Chad Grant, Barbara Cunningham",
+  "seller": ["Chad Grant", "Barbara Cunningham"],
   "progress": "100%",
   "created": "01-Sep-20",
   "completed": "01-Sep-20",
@@ -123,7 +123,7 @@
     "$oid": "61e6d643f74bde307e507b2c"
   },
   "streetAddress": "135 Sycamore Avenue, Observatory",
-  "seller": "Barbara Fox",
+  "seller": ["Barbara Fox"],
   "progress": "100%",
   "created": "02-Sep-20",
   "completed": "02-Sep-20",
@@ -133,7 +133,7 @@
     "$oid": "61e6d643f74bde307e507b2d"
   },
   "streetAddress": "136 Sycamore Avenue, Observatory",
-  "seller": "Louisa Woodkin, Vincent Willis",
+  "seller": ["Louisa Woodkin", "Vincent Willis"],
   "progress": "71%",
   "created": "03-Sep-20",
   "completed": "Incomplete",
@@ -143,7 +143,7 @@
     "$oid": "61e6d643f74bde307e507b2e"
   },
   "streetAddress": "137 Sycamore Avenue, Observatory",
-  "seller": "Louis Mendez",
+  "seller":[ "Louis Mendez"],
   "progress": "100%",
   "created": "04-Sep-20",
   "completed": "05-Sep-20",
@@ -153,7 +153,7 @@
     "$oid": "61e6d643f74bde307e507b2f"
   },
   "streetAddress": "138 Sycamore Avenue, Observatory",
-  "seller": "Kelly Grand",
+  "seller": ["Kelly Grand"],
   "progress": "0%",
   "created": "05-Sep-20",
   "completed": "Incomplete",
@@ -163,7 +163,7 @@
     "$oid": "61e6d643f74bde307e507b30"
   },
   "streetAddress": "139 Sycamore Avenue, Observatory",
-  "seller": "Alex Henderson, George Ellis",
+  "seller":[ "Alex Henderson", "George Ellis"],
   "progress": "71%",
   "created": "06-Sep-20",
   "completed": "Incomplete",
@@ -173,7 +173,7 @@
     "$oid": "61e6d643f74bde307e507b31"
   },
   "streetAddress": "140 Sycamore Avenue, Observatory",
-  "seller": "Beatrice Cooper",
+  "seller": ["Beatrice Cooper"],
   "progress": "100%",
   "created": "07-Sep-20",
   "completed": "07-Sep-20",
@@ -183,7 +183,7 @@
     "$oid": "61e6d643f74bde307e507b32"
   },
   "streetAddress": "141 Sycamore Avenue, Observatory",
-  "seller": "Dan Mendoza",
+  "seller": ["Dan Mendoza"],
   "progress": "100%",
   "created": "08-Sep-20",
   "completed": "08-Sep-20",
@@ -193,7 +193,7 @@
     "$oid": "61e6d643f74bde307e507b33"
   },
   "streetAddress": "142 Sycamore Avenue, Observatory",
-  "seller": "Jessica Bradley",
+  "seller": ["Jessica Bradley"],
   "progress": "50%",
   "created": "09-Sep-20",
   "completed": "Incomplete",
@@ -203,7 +203,7 @@
     "$oid": "61e6d643f74bde307e507b34"
   },
   "streetAddress": "143 Sycamore Avenue, Observatory",
-  "seller": "Chad Grant, Barbara Cunningham",
+  "seller": ["Chad Grant", "Barbara Cunningham"],
   "progress": "0%",
   "created": "10-Sep-20",
   "completed": "Incomplete",
