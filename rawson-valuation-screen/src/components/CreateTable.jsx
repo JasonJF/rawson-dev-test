@@ -6,6 +6,9 @@ import {
   useFlexLayout
 } from "react-table";
 import { useState } from "react";
+import CustomCaretDefault from "./CustomCaretDefault";
+import CustomCaretUp from "./CustomCaretUp";
+import CustomCaretDown from "./CustomCaretDown";
 
  //Example taken from https://nafeu.medium.com/global-filtering-and-sorting-with-react-table-ec604e57614a
 
@@ -77,17 +80,22 @@ export default function Table({ columns, data, defaultColumn }) {
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                
+                    <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                      <div className="d-inline-flex align-items-center">
                   {column.render("Header")}
                   {/* Add a sort direction indicator */}
-                  <span>
+                  {/* <div className="d-flex flex-column"> */}
                     {column.isSorted
                       ? column.isSortedDesc
-                        ? " 🔽"
-                        : " 🔼"
-                      : ""}
-                  </span>
+                        ? <CustomCaretDown />
+                        : <CustomCaretUp />
+                      : <CustomCaretDefault />}
+                  {/* </div> */}
+                  </div>
                 </th>
+                
+                
               ))}
             </tr>
           ))}

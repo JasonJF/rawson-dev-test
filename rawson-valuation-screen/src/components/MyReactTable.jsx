@@ -60,6 +60,7 @@ export default function MyReactTable() {
         // Header: "SELLER",
         Header: () => (
           <div
+          className="d-inline-flex"
             style={{
               textAlign:"center"
             }}
