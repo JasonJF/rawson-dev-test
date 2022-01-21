@@ -3,7 +3,7 @@ import ReportPopUp from "./ReportPopUp";
 
 export default function ReportItem() {
   return (
-    <div className="reportItemContainer d-flex align-self-center">
+    <div className="reportItemContainer d-flex align-self-center mx-2 px-2">
       <div className="col m-0 p-0">
         <i className="bi bi-eye-fill text-primary p-0 m-0"></i>
       </div>

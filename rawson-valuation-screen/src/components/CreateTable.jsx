@@ -47,7 +47,7 @@ export default function Table({ columns, data, defaultColumn }) {
     headerGroups,
     rows,
     prepareRow,
-    useFlexLayout,
+    
     state: { globalFilter },
     visibleColumns,
     preGlobalFilteredRows,
@@ -59,6 +59,7 @@ export default function Table({ columns, data, defaultColumn }) {
       defaultColumn
     },
     useGlobalFilter,
+    useFlexLayout,
     useSortBy
   );
 
@@ -81,7 +82,11 @@ export default function Table({ columns, data, defaultColumn }) {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 
-                    <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                    <th {...column.getHeaderProps(
+                      
+                      // {style: {width: '200px'}},
+                      column.getSortByToggleProps()
+                      )}>
                       <div className="d-inline-flex align-items-center">
                   {column.render("Header")}
                   {/* Add a sort direction indicator */}

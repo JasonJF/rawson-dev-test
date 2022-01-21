@@ -40,20 +40,21 @@ import SellerItem from "./SellerItem";
 export default function MyReactTable() {
 
   //Setting up defaultColumn for flex resizing
-//   const defaultColumn = React.useMemo(
-//     () => ({
-//       // When using the useFlexLayout:
-//       minWidth: 30, // minWidth is only used as a limit for resizing
-//       width: 150, // width is used for both the flex-basis and flex-grow
-//       maxWidth: 200, // maxWidth is only used as a limit for resizing
-//   }),
-//   []
-// );
+  const defaultColumn = React.useMemo(
+    () => ({
+      // When using the useFlexLayout:
+      minWidth: 30, // minWidth is only used as a limit for resizing
+      width: 150, // width is used for both the flex-basis and flex-grow
+      // maxWidth: 200, // maxWidth is only used as a limit for resizing
+  }),
+  []
+);
   const columns = useMemo(
     () => [
       {
         Header: "STREET ADDRESS",
         accessor: "streetAddress",
+        width: 200,
         Cell: (cell) => <PropertyItem value={cell} />
       },
       {
@@ -66,27 +67,32 @@ export default function MyReactTable() {
             }}
           >SELLER</div>),       //The extra div is to align this specific column
         accessor: "seller",
+        width: 150,
         Cell: (cell) => <SellerItem value={cell}/>
       },
       {
         Header: "PROGRESS",
         accessor: "progress",
         Cell: (cell) => <ProgressItem value={cell} />,
+        width: 150,
         disableGlobalFilter: true
       },
       {
         Header: "CREATED",
         accessor: "created",
+        width: 70,
         disableGlobalFilter: true
       },
       {
         Header: "COMPLETED",
         accessor: "completed",
+        width: 100,
         disableGlobalFilter: true
       },
       {
         Header: "REPORT",
         accessor: "report",
+        width: 100,
         Cell: () => <ReportItem />,
         disableGlobalFilter: true
       }
@@ -98,7 +104,7 @@ export default function MyReactTable() {
 
   return (
     <div className="container shadow-sm card py-3 px-0 my-4">
-      <Table columns={columns} data={rows}/> 
+      <Table columns={columns} data={rows} defaultColumn={defaultColumn}/> 
     </div>
   );
 }
