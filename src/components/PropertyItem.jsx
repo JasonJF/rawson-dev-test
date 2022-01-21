@@ -10,7 +10,7 @@ export default function PropertyItem(props) {
         <div className="propertyImgContainer align-self-center p-2 m-1">
           <img
             className="propertyImg p-0 m-0"
-            src="https://www.vezaproperties.co.za/motorImages4/600/9201430.jpg"
+            src={"http://placeimg.com/50/50/arch?dummy="+ Math.floor(Math.random() * 100)} //added to generate random images
             alt="house"
           />
         </div>
