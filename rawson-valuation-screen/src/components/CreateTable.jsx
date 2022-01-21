@@ -91,8 +91,8 @@ export default function Table({ columns, data, defaultColumn }) {
                       
                       // {style: {width: '200px'}},
                       
-                      [{className: column.className}, getColumnProps(column)],
-                      column.getSortByToggleProps()
+                      [{className: column.className}, getColumnProps(column), column.getSortByToggleProps()],
+                     
                       )}>
                       <div className="d-flex align-items-center">
                   {column.render("Header")}
