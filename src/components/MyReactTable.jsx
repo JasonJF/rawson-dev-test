@@ -6,36 +6,6 @@ import ReportItem from "./ReportItem";
 import PropertyItem from "./PropertyItem";
 import SellerItem from "./SellerItem";
 
-//import data
-
-// const data = require("../dummydata/testCollection.json");
-// const data = [{
-//   "_id": {
-//     "$oid": "61e6d643f74bde307e507b20"
-//   },
-//   "streetAddress": "123 Sycamore Avenue, Observatory",
-//   "seller": "Ryno Johnson",
-//   "progress": "0%",
-//   "created": "21-Aug-20",
-//   "completed": "Incomplete",
-//   "report": "1"
-// }]
-
-// const data = [{
-//   "_id": {
-//     "$oid": "61e6d643f74bde307e507b20"
-//   },
-//   "streetAddress": "1",
-//   "seller": ["1"],
-//   "progress": "0%",
-//   "created": "1",
-//   "completed": "1",
-//   "report": "1"
-// }]
-// console.log(data);
-
-
-
 
 export default function MyReactTable() {
 

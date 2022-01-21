@@ -3,9 +3,7 @@ import React from "react";
 export default function PropertyItem(props) {
 
   let cellValue = props.value.cell.value;
-  // console.log(cellValue);
   return (
-    // <div className="">
       <div className="d-inline-flex p-0">
         <div className="propertyImgContainer align-self-center p-2 m-1">
           <img
@@ -21,6 +19,5 @@ export default function PropertyItem(props) {
           <div className="lastUpdated text-start">Updated 3 hours ago</div>
         </div>
       </div>
-    // </idv>
   );
 }

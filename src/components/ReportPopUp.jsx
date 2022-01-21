@@ -3,7 +3,6 @@ import PopUpLink from "./PopUpLink";
 
 export default function ReportPopUp() {
   return (
-    // <div className="card">
       <ul className="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
           <li><h6 className="dropdown-header">VALUATION</h6></li>
           <li>
@@ -46,6 +45,5 @@ export default function ReportPopUp() {
             </div>
             </li>
         </ul>
-    // </div>
   );
 }

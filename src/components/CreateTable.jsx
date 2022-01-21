@@ -89,8 +89,6 @@ export default function Table({ columns, data, defaultColumn }) {
                 
                     <th {...column.getHeaderProps(
                       
-                      // {style: {width: '200px'}},
-                      
                       [{className: column.className}, getColumnProps(column), column.getSortByToggleProps()],
                      
                       )}>
