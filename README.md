@@ -1,3 +1,16 @@
+----Message from Jason----
+
+
+Hi Elvis thank you again for giving me this opportunity!
+
+I wasn't sure how you would run the assignment, so I stuck with the default dev options.
+
+--npm install
+
+--npm run dev
+
+Regards
+
 # Rawson Properties Technical Assessment
 
 Thank you so much for meeting with us. As discussed, see below the frontend engineering challenge.
