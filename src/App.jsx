@@ -2,7 +2,7 @@ import './App.css';
 import MyNavbar from './components/MyNavbar';
 import MyReactTable from './components/MyReactTable';
 import ValuationsSummary from './components/ValuationsSummary';
-import logo from "../src/images/logo-rawson-light-grey.png";
+import logo from "./images/logo-rawson-light-grey.png";
 import ReportPopUp from './components/ReportPopUp';
 
 function App() {
