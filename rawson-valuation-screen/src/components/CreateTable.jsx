@@ -38,12 +38,17 @@ import CustomCaretDown from "./CustomCaretDown";
     );
   }
 
+  // Create a default prop getter
+  
+  const defaultPropGetter = () => ({})
+
 export default function Table({ columns, data, defaultColumn }) {
  
   // Use the state and functions returned from useTable to build your UI
   const {
     getTableProps,
     getTableBodyProps,
+    getColumnProps = defaultPropGetter,
     headerGroups,
     rows,
     prepareRow,
@@ -85,18 +90,16 @@ export default function Table({ columns, data, defaultColumn }) {
                     <th {...column.getHeaderProps(
                       
                       // {style: {width: '200px'}},
+                      
+                      [{className: column.className}, getColumnProps(column)],
                       column.getSortByToggleProps()
                       )}>
-                      <div className="d-inline-flex align-items-center">
+                      <div className="d-flex align-items-center">
                   {column.render("Header")}
                   {/* Add a sort direction indicator */}
-                  {/* <div className="d-flex flex-column"> */}
-                    {column.isSorted
-                      ? column.isSortedDesc
-                        ? <CustomCaretDown />
-                        : <CustomCaretUp />
-                      : <CustomCaretDefault />}
-                  {/* </div> */}
+               
+                    {column.isSorted ? column.isSortedDesc? <CustomCaretDown />: <CustomCaretUp />: <CustomCaretDefault />}
+               
                   </div>
                 </th>
                 

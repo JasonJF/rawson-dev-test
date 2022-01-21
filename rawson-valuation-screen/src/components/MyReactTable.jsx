@@ -61,13 +61,12 @@ export default function MyReactTable() {
         // Header: "SELLER",
         Header: () => (
           <div
-          className="d-inline-flex"
-            style={{
-              textAlign:"center"
-            }}
+          className="d-flex justify-content-center"
+            
           >SELLER</div>),       //The extra div is to align this specific column
         accessor: "seller",
         width: 150,
+        className: "d-flex justify-content-center", //this class is passed to the getColumnProps in CreateTable
         Cell: (cell) => <SellerItem value={cell}/>
       },
       {
@@ -86,13 +85,13 @@ export default function MyReactTable() {
       {
         Header: "COMPLETED",
         accessor: "completed",
-        width: 100,
+        width: 80,
         disableGlobalFilter: true
       },
       {
         Header: "REPORT",
         accessor: "report",
-        width: 100,
+        width: 80,
         Cell: () => <ReportItem />,
         disableGlobalFilter: true
       }
