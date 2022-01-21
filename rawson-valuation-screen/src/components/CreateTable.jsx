@@ -112,7 +112,7 @@ export default function Table({ columns, data, defaultColumn }) {
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                    <td className="align-self-center" {...cell.getCellProps()}>{cell.render("Cell")}</td>
                   );
                 })}
               </tr>
