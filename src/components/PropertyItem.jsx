@@ -3,6 +3,9 @@ import React from "react";
 export default function PropertyItem(props) {
 
   let cellValue = props.value.cell.value;
+  const {created , completed } = props.value.row.values
+  console.log(typeof created);
+  console.log(typeof completed);
   return (
       <div className="d-inline-flex p-0">
         <div className="propertyImgContainer align-self-center p-2 m-1">

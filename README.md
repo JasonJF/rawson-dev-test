@@ -1,3 +1,9 @@
+
+**Extras wishlist
+- pagination
+- change field 'COMPLETED' from a string to date format - update property item 'last updated' field automatically
+
+
 ----Message from Jason----
 
 
